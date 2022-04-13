@@ -10,28 +10,28 @@ body {
 }
 
 /* Header Specific CSS */
-.mah-content-wrapper {
+.music-content-wrapper {
     display: flex;
     background-color: #666161;
     padding: 24px 100px;
     color: #fff;
 }
 
-.mah-meta-data {
+.music-meta-data {
     padding: 0 35px;
     position: relative;
 }
 
-h1.mah-title {
+h1.music-title {
     margin: 10px 0;
 }
 
-.mah-meta-data span {
+.music-meta-data span {
     display: block;
     margin-right: 23px;
 }
 
-.mah-cover-actions {
+.music-cover-actions {
     display: flex;
     position: absolute;
     bottom: 0;
