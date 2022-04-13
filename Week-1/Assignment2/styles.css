@@ -18,17 +18,17 @@ body {
 }
 
 .music-meta-data {
-    padding: 0 35px;
+    padding: 0 36px;
     position: relative;
 }
 
 h1.music-title {
-    margin: 10px 0;
+    margin: 12px 0;
 }
 
 .music-meta-data span {
     display: block;
-    margin-right: 23px;
+    margin-right: 24px;
 }
 
 .music-cover-actions {
@@ -46,7 +46,7 @@ h1.music-title {
 
 .maf-content-wrapper {
     display: flex;
-    padding: 9px;
+    padding: 8px;
     color: #fff;
     background-color: #7066fb;
 }
@@ -71,7 +71,7 @@ h1.music-title {
 
 .song-info span {
     display: block;
-    margin: 7px;
+    margin: 8px;
 }
 
 .maf-cover-actions ul {
@@ -99,7 +99,7 @@ h1.music-title {
 }
 
 .sidebar-nav-menu ul li {
-    padding: 1px 24px;
+    padding: 0 24px;
     line-height: 10vh;
 }
 
@@ -116,7 +116,7 @@ h1.music-title {
 
 .main-content table tr td {
     text-align: left;
-    padding: 15px;
+    padding: 16px;
 }
 
 .main-content table tr:nth-child(even) {
