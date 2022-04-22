@@ -1,13 +1,9 @@
-html,
-body {
+html, body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
 }
 
-h1,
-h2,
-h3,
-a {
+h1, h2, h3, a {
     color: #464ee3;
 }
 
@@ -90,7 +86,7 @@ footer.site-footer {
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0 7em;
+    padding: 0 100px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -137,6 +133,7 @@ footer.site-footer {
     border-width: 0;
     border-radius: 12px;
     box-shadow: 0 -2px 20px 1px #eee;
+    display: contents;
 }
 
 .article-comment-form legend {
@@ -155,7 +152,7 @@ footer.site-footer {
     width: 100%;
     font-size: 20px;
     text-align: left;
-    flex-basis: 11em;
+    flex-basis: 150px;
 }
 
 .article-comment-form .form-fields input,
