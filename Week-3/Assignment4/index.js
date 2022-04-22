@@ -20,3 +20,4 @@ var stack1 = stack([5, 7]);
 stack1.push(10);
 stack1.push(20);
 console.log(stack1.getItems());
+console.log(stack.items);
