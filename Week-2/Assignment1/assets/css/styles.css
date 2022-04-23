@@ -1,0 +1,225 @@
+html, body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, a {
+    color: #464ee3;
+}
+
+/* Header CSS starts */
+
+header.site-header {
+    box-shadow: 0 4px 20px 4px #eee;
+}
+
+.site-header-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#site-logo {
+    width: 9em;
+}
+
+#site-logo img {
+    width: 100%;
+}
+
+ul.nav-items-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 32px;
+    padding: 36px;
+}
+
+li.nav-item {
+    text-align: right;
+    color: #464ee3;
+    font-weight: 600;
+}
+
+li.nav-item a {
+    text-decoration: none;
+}
+
+/* Header CSS ends */
+
+/* Article Container CSS starts */
+
+h1.main-article-heading {
+    margin: 40px 0;
+}
+
+.articles-grid-container {
+    width: 80%;
+    margin: 48px auto;
+}
+
+article.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 40px;
+}
+
+article.article-crypto {
+    padding: 20px;
+    border: 1px solid #eee;
+}
+
+/* Article Container CSS ends */
+
+/* Footer CSS starts */
+
+footer.site-footer {
+    box-shadow: 2px -4px 20px 4px #eee;
+}
+
+.site-footer-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.about-site {
+    text-align: center;
+    font-size: 24px;
+    width: 80%;
+}
+
+/* Footer CSS ends */
+
+/* Article Page CSS starts */
+
+.article-single-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 40px;
+}
+
+.article-image img {
+    width: 100%;
+}
+
+.article-details {
+    display: flex;
+    flex-flow: column;
+}
+
+.article-single-layout article.article-crypto {
+    border: 0;
+    padding: 12px;
+}
+
+.article-single-layout article.article-grid {
+    grid-gap: 0;
+}
+
+.article-comment-form {
+    margin-top: 28px;
+}
+
+.article-comment-form fieldset {
+    padding: 48px;
+    border-width: 0;
+    border-radius: 12px;
+    box-shadow: 0 -2px 20px 1px #eee;
+    display: contents;
+}
+
+.article-comment-form legend {
+    font-size: 24px;
+    color: #484ee3;
+}
+
+.article-comment-form .form-fields {
+    display: flex;
+    margin: 32px 0;
+    padding: 0 28px;
+}
+
+.article-comment-form .form-fields label {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    flex-basis: 150px;
+}
+
+.article-comment-form .form-fields input,
+.article-comment-form .form-fields textarea {
+    padding: 12px 20px;
+    width: 500px;
+    border-radius: 12px;
+    border: 2px solid #eee;
+    font-family: "Open Sans";
+    font-size: 16px;
+    flex-basis: 80%;
+}
+
+.article-comment-form .form-fields input:focus,
+.article-comment-form .form-fields textarea:focus {
+    outline-color: #484ee3;
+}
+
+.form-fields button {
+    padding: 12px 44px;
+    font-size: 20px;
+    background-color: #4048e8;
+    color: #fff;
+    border: 0;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* Article Page CSS ends */
+
+/* Media Queries CSS */
+@media only screen and (max-width: 600px) {
+    .site-header-content {
+        padding:0;
+    }
+
+    ul.nav-items-list {
+        grid-template-columns: auto;
+    }
+
+    .article-single-content {
+        grid-template-columns: auto;
+    }
+
+    .site-footer-content {
+        padding: 0;
+    }
+
+    .article-details {
+        flex-direction: column-reverse;
+    }
+
+    .article-comment-form fieldset {
+        min-width: 64%;
+        padding: 0;
+    }
+
+    .article-comment-form .form-fields {
+        flex-direction: column;
+    }
+
+    .article-comment-form .form-fields input,
+    .article-comment-form .form-fields textarea {
+        width: auto;
+    }
+
+    .article-comment-form .form-fields label {
+        flex-basis: 0;
+    }
+}
