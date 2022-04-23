@@ -13,19 +13,24 @@ function time(val){
 
 function memoize(fun){
     var cache = new Map();
-    return function (...args){
-        let key = args;
-        if(cache.has(key)){
-            time(cache.get(key));
+    return function (args){
+        var key = args;
+        if( cache.has(key) ){
+            return cache.get(key);
         }
-        cache.set(key, fun(...args))
-        time(cache.get(key));
+        cache.set(key, fun(args));
+        return cache.get(key);
     }
 }
 
 var fc = memoize(fib);
-fc(30);
-fc(35);
-fc(30);
-fc(40);
-fc(30);
+var out = fc(30);
+time(out);
+var out1 = fc(35);
+time(out1);
+var out2 = fc(30);
+time(out2);
+var out3 = fc(40);
+time(out3);
+var out4 = fc(30);
+time(out4);
