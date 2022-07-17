@@ -1,0 +1,67 @@
+.container {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    height: 300px;
+}
+
+.hi {
+    height: 100%;
+    padding: 50%;
+    box-sizing: border-box;
+}
+
+.box-container {
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+}
+
+.box {
+    width: 148px;
+    height: 148px;
+    display: inline-block;
+    transition: 0.5s;
+    margin-right: -4px;
+    margin-bottom: -4px;
+}
+
+.box1 {
+    background-color: red;
+    transform-origin: top left;
+    transform: rotate(0deg);
+}
+
+.box2 {
+    background-color: yellow;
+    transform-origin: top right;
+    transform: rotate(360deg);
+}
+
+.box3 {
+    background-color: blue;
+    transform-origin: bottom left;
+    transform: rotate(360deg);
+}
+
+.box4 {
+    background-color: green;
+    transform-origin: bottom right;
+    transform: rotate(0deg);
+}
+
+.box-container:hover .box1 {
+    transform: rotate(90deg);
+}
+
+.box-container:hover .box2 {
+    transform: rotate(270deg);
+}
+
+.box-container:hover .box3 {
+    transform: rotate(270deg);
+}
+
+.box-container:hover .box4 {
+    transform: rotate(90deg);
+}

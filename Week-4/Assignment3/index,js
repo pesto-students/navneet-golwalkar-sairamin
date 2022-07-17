@@ -1,0 +1,25 @@
+var fib = {
+    n : 10,
+    [Symbol.iterator]: function(){
+        let i = 0;
+        let oldv = 0;
+        let newv = 0;
+        return {
+            next : () => {
+                if(i++ <= this.n){
+                    [ oldv, newv ]= [ newv, ( oldv + newv ) || 1 ];
+                    return {
+                        value : oldv,
+                        done : false
+                    }
+                } else{
+                    return {
+                        done : true
+                    }
+                }
+            }
+        }
+    }
+}
+
+console.log([ ...fib ]);
